@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        border: 1px solid #808080;
+        height: 300px;
+        width: 700px;
+      }
+      .box-children {
+        width: 100px;
+        height: 100px;
+        overflow: auto;
+        border: 1px solid gray;
+        float: inherit;
+      }
+      .box-parent {
+        float: left;
+      }
+
+      .parent {
+        width: 300px;
+        height: 200px;
+        background: #ddd;
+        float: left;
+      }
+
+      .child {
+        width: 100px;
+        height: 100px;
+        background: lightblue;
+        margin: 5px;
+      }
+
+      .b {
+        float: inherit; /* thử kế thừa float từ parent */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box-parent">
+        <div class="box-children">
+          <p>
+            The float property is used for positioning and formatting content
+            e.g. let an image float left to the text in a container.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="parent">
+      <div class="child a">A</div>
+      <div class="child b">B</div>
+    </div>
+  </body>
+</html>
